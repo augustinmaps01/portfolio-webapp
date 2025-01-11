@@ -190,7 +190,7 @@ const AboutSection = () => {
                         About Me
                     </h2>
                     <p className="text-lg mb-6 text-center md:text-left">
-                        I'm a passionate web developer with a strong focus on creating user-friendly and visually appealing web applications.
+                        I&apos;m a passionate web developer with a strong focus on creating user-friendly and visually appealing web applications.
                     </p>
                     <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-6">
                         {TAB_DATA.map((tabItem) => (

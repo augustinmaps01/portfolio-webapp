@@ -1,20 +1,9 @@
 import React from 'react';
 
-
-const variants = {
-        default: {
-            width: 0,
-            
-        },
-        active: {
-            width: 'calc(100% - 0.75rem)',
-        },
-};
 const TabButton = ({ active, selectTab, children }) => {
-    // Define button classes dynamically based on the active state
     const buttonClasses = active
         ? 'text-black'
-        : 'text-[#ADB7BE] ';
+        : 'text-[#ADB7BE]';
 
     return (
         <button

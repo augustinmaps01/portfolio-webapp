@@ -21,10 +21,11 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden max-w-full md:max-w-[400px] mx-auto">
         {/* Image Section with Framer Motion Hover Effect */}
         <motion.div
-          className="h-52 md:h-72 bg-cover bg-center"
+          className="h-52 md:h-72 bg-cover bg-center cursor-pointer"
           style={{ backgroundImage: `url(${imgUrl})` }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
+          onClick={openModal} // Open the modal when clicking the image
         ></motion.div>
 
         {/* Content Section */}
@@ -47,20 +48,20 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
           {/* Action Buttons */}
           <div className="flex mt-4 flex-wrap gap-4">
-            <Link href={gitUrl}>
-              <button className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base">
-                <CodeBracketIcon className="w-5 h-5 mr-2" />
-                Code
-              </button>
+            <Link
+              href={gitUrl}
+              className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base"
+            >
+              <CodeBracketIcon className="w-5 h-5 mr-2" />
+              Code
             </Link>
             {previewUrl && (
-              <Link href={previewUrl}>
-                <button
-                  className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base"
-                >
-                  <EyeIcon className="w-5 h-5 mr-2" />
-                  Preview
-                </button>
+              <Link
+                href={previewUrl}
+                className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base"
+              >
+                <EyeIcon className="w-5 h-5 mr-2" />
+                Preview
               </Link>
             )}
           </div>

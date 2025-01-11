@@ -7,8 +7,8 @@ export const MenuOverlay = ({ links }) => {
       <ul className="flex flex-col items-center space-y-4">
         {links.map((link, index) => (
           <li key={index}>
-            <Link href={link.path} className="hover:text-gray-400 transition-colors">
-              {link.title}
+            <Link href={link.path} passHref>
+              <a className="hover:text-gray-400 transition-colors">{link.title}</a>
             </Link>
           </li>
         ))}

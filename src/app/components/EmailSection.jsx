@@ -124,14 +124,14 @@ const EmailSection = () => {
       {/* Text Content */}
       <div className="z-10" ref={textRef}>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
         <p className="text-gray-400 mb-6 max-w-md">
-          I'm currently looking for new opportunities. If you have any
+          I&apos;m currently looking for new opportunities. If you have any
           questions or would like to get in touch, feel free to reach out!
         </p>
-          {/* Social Media Icons */}
-          <div className="flex space-x-4 mt-4">
+        {/* Social Media Icons */}
+        <div className="flex space-x-4 mt-4">
           <a
             href="https://www.facebook.com/cloudsephiroth56"
             target="_blank"
