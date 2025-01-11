@@ -1,6 +1,8 @@
 "use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import axios from "axios";
 
@@ -129,16 +131,18 @@ const EmailSection = () => {
           questions or would like to get in touch, feel free to reach out!
         </p>
           {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-4">
+          <div className="flex space-x-4 mt-4">
           <a
             href="https://www.facebook.com/cloudsephiroth56"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/images/logo/2023_Facebook_icon.webp"
               alt="Facebook"
-              className="h-10 w-10 hover:opacity-80 transition-opacity duration-200"
+              width={40}
+              height={40}
+              className="hover:opacity-80 transition-opacity duration-200"
             />
           </a>
           <a
@@ -146,10 +150,12 @@ const EmailSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/images/logo/instagram.png"
               alt="Instagram"
-              className="h-10 w-10 hover:opacity-80 transition-opacity duration-200"
+              width={40}
+              height={40}
+              className="hover:opacity-80 transition-opacity duration-200"
             />
           </a>
           <a
@@ -157,10 +163,12 @@ const EmailSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/images/logo/linkedin-icon-2.svg"
               alt="LinkedIn"
-              className="h-10 w-10 hover:opacity-80 transition-opacity duration-200"
+              width={40}
+              height={40}
+              className="hover:opacity-80 transition-opacity duration-200"
             />
           </a>
           <a
@@ -168,10 +176,12 @@ const EmailSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src="/images/logo/github.png"
-              alt="github"
-              className="h-10 w-10 hover:opacity-80 transition-opacity duration-200"
+              alt="GitHub"
+              width={40}
+              height={40}
+              className="hover:opacity-80 transition-opacity duration-200"
             />
           </a>
           {/* Add more social media links as needed */}

@@ -53,13 +53,16 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
                 Code
               </button>
             </Link>
-            <button
-              onClick={openModal}
-              className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base"
-            >
-              <EyeIcon className="w-5 h-5 mr-2" />
-              Preview
-            </button>
+            {previewUrl && (
+              <Link href={previewUrl}>
+                <button
+                  className="flex items-center px-4 py-2 rounded-full bg-gray-700 text-white text-sm md:text-base"
+                >
+                  <EyeIcon className="w-5 h-5 mr-2" />
+                  Preview
+                </button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

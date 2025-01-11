@@ -54,7 +54,7 @@ const HeroSection = () => {
         >
           <h1 className="text-gray-900 mb-6 text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500">
-              Hello, I'm
+              Hello, I&apos;m
             </span>
             <br />
             <TypeAnimation
@@ -67,7 +67,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-gray-600 text-lg sm:text-xl lg:text-2xl leading-relaxed mt-6">
             I specialize in crafting modern, user-friendly web applications with
-            a focus on performance and aesthetics. Let's build something
+            a focus on performance and aesthetics. Let&apos;s build something
             amazing together!
           </p>
 

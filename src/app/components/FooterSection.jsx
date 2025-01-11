@@ -9,7 +9,8 @@ const FooterSection = () => {
         <div>
           <h2 className="text-2xl font-edu text-white font-bold mb-4">Augustin Maps</h2>
           <p className="text-gray-400">
-            Turning ideas into seamless digital experiences. Let's create something extraordinary together!
+            I&apos;m currently looking for new opportunities. If you have any
+            questions or would like to get in touch, feel free to reach out!
           </p>
         </div>
 

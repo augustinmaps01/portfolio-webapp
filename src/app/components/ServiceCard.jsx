@@ -1,12 +1,15 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const ServiceCard = ({ title, description, imgUrl }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full transform transition-transform hover:scale-105">
-      <img
+      <Image
         src={imgUrl}
         alt={title}
+        width={500} // Replace 500 with your desired width
+        height={300} // Replace 300 with your desired height
         className="w-full h-48 md:h-56 lg:h-64 object-cover"
       />
       <div className="p-4 flex flex-col flex-grow">
