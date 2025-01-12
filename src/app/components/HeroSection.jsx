@@ -93,8 +93,8 @@ const HeroSection = () => {
               className="relative px-10 py-4 rounded-full w-full sm:w-auto border-2 border-gray-500 text-black font-bold hover:bg-[#1a1a1a] hover:text-white transition-all duration-300 group overflow-hidden shadow-md"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/Augustin-Maputol-CV.pdf";
-                link.download = "Augustin-Maputol-CV.pdf";
+                link.href = `${window.location.origin}/AUGUSTIN C. MAPUTOL RESUME 2023.pdf`;
+                link.download = "AUGUSTIN C. MAPUTOL RESUME.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
